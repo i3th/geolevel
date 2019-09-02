@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		378E091DDC0235A4ECC21685 /* Pods_GeoLevel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42F626CBC4837F153DD5146 /* Pods_GeoLevel.framework */; };
+		95D05B44058834D0E1B5BAEE /* Pods_GeoLevelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B3E08E2FB0A7BC2355620 /* Pods_GeoLevelTests.framework */; };
+		9D7DA5BB231B98BC00CA5F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA5BA231B98BC00CA5F3D /* AppDelegate.swift */; };
+		9D7DA5BD231B98BC00CA5F3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA5BC231B98BC00CA5F3D /* ViewController.swift */; };
+		9D7DA5C0231B98BC00CA5F3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5BE231B98BC00CA5F3D /* Main.storyboard */; };
+		9D7DA5C2231B98BE00CA5F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5C1231B98BE00CA5F3D /* Assets.xcassets */; };
+		9D7DA5C5231B98BE00CA5F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5C3231B98BE00CA5F3D /* LaunchScreen.storyboard */; };
+		9D7DA5D0231B98BE00CA5F3D /* GeoLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA5CF231B98BE00CA5F3D /* GeoLevelTests.swift */; };
+		9D7DA5DB231BB01300CA5F3D /* 1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DA231BB01300CA5F3D /* 1.geojson */; };
+		9D7DA5DD231DA99600CA5F3D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DC231DA99600CA5F3D /* SettingsViewController.swift */; };
+		9D7DA5E0231DB37F00CA5F3D /* 2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DF231DB37F00CA5F3D /* 2.geojson */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D7DA5CC231B98BE00CA5F3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7DA5AF231B98BC00CA5F3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7DA5B6231B98BC00CA5F3D;
+			remoteInfo = GeoLevel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		157B4DA36C649A64CA5EB733 /* Pods-GeoLevel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLevel.release.xcconfig"; path = "Target Support Files/Pods-GeoLevel/Pods-GeoLevel.release.xcconfig"; sourceTree = "<group>"; };
+		84B294F2E6C613CCCAD293EC /* Pods-GeoLevelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLevelTests.debug.xcconfig"; path = "Target Support Files/Pods-GeoLevelTests/Pods-GeoLevelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1B3E08E2FB0A7BC2355620 /* Pods_GeoLevelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoLevelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7DA5B7231B98BC00CA5F3D /* GeoLevel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLevel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7DA5BA231B98BC00CA5F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D7DA5BC231B98BC00CA5F3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D7DA5BF231B98BC00CA5F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D7DA5C1231B98BE00CA5F3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D7DA5C4231B98BE00CA5F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D7DA5C6231B98BE00CA5F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7DA5CB231B98BE00CA5F3D /* GeoLevelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLevelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7DA5CF231B98BE00CA5F3D /* GeoLevelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLevelTests.swift; sourceTree = "<group>"; };
+		9D7DA5D1231B98BE00CA5F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7DA5DA231BB01300CA5F3D /* 1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.geojson; sourceTree = "<group>"; };
+		9D7DA5DC231DA99600CA5F3D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9D7DA5DF231DB37F00CA5F3D /* 2.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.geojson; sourceTree = "<group>"; };
+		9D7DA5E1231DD0F200CA5F3D /* 1.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = 1.gpx; path = /Users/aliaksei_smuhaliou/personal/geolevel/src/Data/1.gpx; sourceTree = "<absolute>"; };
+		B6486D17E70579C73F413296 /* Pods-GeoLevelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLevelTests.release.xcconfig"; path = "Target Support Files/Pods-GeoLevelTests/Pods-GeoLevelTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8AD21FC9BB5104459DDC146 /* Pods-GeoLevel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLevel.debug.xcconfig"; path = "Target Support Files/Pods-GeoLevel/Pods-GeoLevel.debug.xcconfig"; sourceTree = "<group>"; };
+		E42F626CBC4837F153DD5146 /* Pods_GeoLevel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoLevel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D7DA5B4231B98BC00CA5F3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378E091DDC0235A4ECC21685 /* Pods_GeoLevel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7DA5C8231B98BE00CA5F3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D05B44058834D0E1B5BAEE /* Pods_GeoLevelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17EB59D3E8BD20F8EBEC5A37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8AD21FC9BB5104459DDC146 /* Pods-GeoLevel.debug.xcconfig */,
+				157B4DA36C649A64CA5EB733 /* Pods-GeoLevel.release.xcconfig */,
+				84B294F2E6C613CCCAD293EC /* Pods-GeoLevelTests.debug.xcconfig */,
+				B6486D17E70579C73F413296 /* Pods-GeoLevelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D7DA5AE231B98BB00CA5F3D = {
+			isa = PBXGroup;
+			children = (
+				9D7DA5DE231DAD1700CA5F3D /* Data */,
+				9D7DA5B9231B98BC00CA5F3D /* GeoLevel */,
+				9D7DA5CE231B98BE00CA5F3D /* GeoLevelTests */,
+				9D7DA5B8231B98BC00CA5F3D /* Products */,
+				17EB59D3E8BD20F8EBEC5A37 /* Pods */,
+				ACA282994ADD08E14BAE2850 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D7DA5B8231B98BC00CA5F3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D7DA5B7231B98BC00CA5F3D /* GeoLevel.app */,
+				9D7DA5CB231B98BE00CA5F3D /* GeoLevelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D7DA5B9231B98BC00CA5F3D /* GeoLevel */ = {
+			isa = PBXGroup;
+			children = (
+				9D7DA5BA231B98BC00CA5F3D /* AppDelegate.swift */,
+				9D7DA5BC231B98BC00CA5F3D /* ViewController.swift */,
+				9D7DA5DC231DA99600CA5F3D /* SettingsViewController.swift */,
+				9D7DA5BE231B98BC00CA5F3D /* Main.storyboard */,
+				9D7DA5C1231B98BE00CA5F3D /* Assets.xcassets */,
+				9D7DA5C3231B98BE00CA5F3D /* LaunchScreen.storyboard */,
+				9D7DA5C6231B98BE00CA5F3D /* Info.plist */,
+			);
+			path = GeoLevel;
+			sourceTree = "<group>";
+		};
+		9D7DA5CE231B98BE00CA5F3D /* GeoLevelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D7DA5CF231B98BE00CA5F3D /* GeoLevelTests.swift */,
+				9D7DA5D1231B98BE00CA5F3D /* Info.plist */,
+			);
+			path = GeoLevelTests;
+			sourceTree = "<group>";
+		};
+		9D7DA5DE231DAD1700CA5F3D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D7DA5E1231DD0F200CA5F3D /* 1.gpx */,
+				9D7DA5DA231BB01300CA5F3D /* 1.geojson */,
+				9D7DA5DF231DB37F00CA5F3D /* 2.geojson */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ACA282994ADD08E14BAE2850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E42F626CBC4837F153DD5146 /* Pods_GeoLevel.framework */,
+				8B1B3E08E2FB0A7BC2355620 /* Pods_GeoLevelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D7DA5B6231B98BC00CA5F3D /* GeoLevel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7DA5D4231B98BE00CA5F3D /* Build configuration list for PBXNativeTarget "GeoLevel" */;
+			buildPhases = (
+				CEDF692E6F180022861887AF /* [CP] Check Pods Manifest.lock */,
+				9D7DA5B3231B98BC00CA5F3D /* Sources */,
+				9D7DA5B4231B98BC00CA5F3D /* Frameworks */,
+				9D7DA5B5231B98BC00CA5F3D /* Resources */,
+				AA7CAB1057BD263831C9C1A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoLevel;
+			productName = GeoLevel;
+			productReference = 9D7DA5B7231B98BC00CA5F3D /* GeoLevel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D7DA5CA231B98BE00CA5F3D /* GeoLevelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7DA5D7231B98BE00CA5F3D /* Build configuration list for PBXNativeTarget "GeoLevelTests" */;
+			buildPhases = (
+				BE07BC3927032F98DD9FE723 /* [CP] Check Pods Manifest.lock */,
+				9D7DA5C7231B98BE00CA5F3D /* Sources */,
+				9D7DA5C8231B98BE00CA5F3D /* Frameworks */,
+				9D7DA5C9231B98BE00CA5F3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D7DA5CD231B98BE00CA5F3D /* PBXTargetDependency */,
+			);
+			name = GeoLevelTests;
+			productName = GeoLevelTests;
+			productReference = 9D7DA5CB231B98BE00CA5F3D /* GeoLevelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D7DA5AF231B98BC00CA5F3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Aliaksei_Smuhaliou;
+				TargetAttributes = {
+					9D7DA5B6231B98BC00CA5F3D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					9D7DA5CA231B98BE00CA5F3D = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 9D7DA5B6231B98BC00CA5F3D;
+					};
+				};
+			};
+			buildConfigurationList = 9D7DA5B2231B98BC00CA5F3D /* Build configuration list for PBXProject "GeoLevel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D7DA5AE231B98BB00CA5F3D;
+			productRefGroup = 9D7DA5B8231B98BC00CA5F3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D7DA5B6231B98BC00CA5F3D /* GeoLevel */,
+				9D7DA5CA231B98BE00CA5F3D /* GeoLevelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D7DA5B5231B98BC00CA5F3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7DA5C5231B98BE00CA5F3D /* LaunchScreen.storyboard in Resources */,
+				9D7DA5C2231B98BE00CA5F3D /* Assets.xcassets in Resources */,
+				9D7DA5DB231BB01300CA5F3D /* 1.geojson in Resources */,
+				9D7DA5C0231B98BC00CA5F3D /* Main.storyboard in Resources */,
+				9D7DA5E0231DB37F00CA5F3D /* 2.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7DA5C9231B98BE00CA5F3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA7CAB1057BD263831C9C1A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoLevel/Pods-GeoLevel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoLevel/Pods-GeoLevel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoLevel/Pods-GeoLevel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE07BC3927032F98DD9FE723 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoLevelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDF692E6F180022861887AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoLevel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D7DA5B3231B98BC00CA5F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7DA5BD231B98BC00CA5F3D /* ViewController.swift in Sources */,
+				9D7DA5BB231B98BC00CA5F3D /* AppDelegate.swift in Sources */,
+				9D7DA5DD231DA99600CA5F3D /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7DA5C7231B98BE00CA5F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7DA5D0231B98BE00CA5F3D /* GeoLevelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D7DA5CD231B98BE00CA5F3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7DA5B6231B98BC00CA5F3D /* GeoLevel */;
+			targetProxy = 9D7DA5CC231B98BE00CA5F3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D7DA5BE231B98BC00CA5F3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D7DA5BF231B98BC00CA5F3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D7DA5C3231B98BE00CA5F3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D7DA5C4231B98BE00CA5F3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D7DA5D2231B98BE00CA5F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D7DA5D3231B98BE00CA5F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D7DA5D5231B98BE00CA5F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AD21FC9BB5104459DDC146 /* Pods-GeoLevel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoLevel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smug.GeoLevel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D7DA5D6231B98BE00CA5F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157B4DA36C649A64CA5EB733 /* Pods-GeoLevel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoLevel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smug.GeoLevel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D7DA5D8231B98BE00CA5F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B294F2E6C613CCCAD293EC /* Pods-GeoLevelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoLevelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smug.GeoLevelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLevel.app/GeoLevel";
+			};
+			name = Debug;
+		};
+		9D7DA5D9231B98BE00CA5F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6486D17E70579C73F413296 /* Pods-GeoLevelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoLevelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smug.GeoLevelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLevel.app/GeoLevel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D7DA5B2231B98BC00CA5F3D /* Build configuration list for PBXProject "GeoLevel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7DA5D2231B98BE00CA5F3D /* Debug */,
+				9D7DA5D3231B98BE00CA5F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7DA5D4231B98BE00CA5F3D /* Build configuration list for PBXNativeTarget "GeoLevel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7DA5D5231B98BE00CA5F3D /* Debug */,
+				9D7DA5D6231B98BE00CA5F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7DA5D7231B98BE00CA5F3D /* Build configuration list for PBXNativeTarget "GeoLevelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7DA5D8231B98BE00CA5F3D /* Debug */,
+				9D7DA5D9231B98BE00CA5F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D7DA5AF231B98BC00CA5F3D /* Project object */;
+}

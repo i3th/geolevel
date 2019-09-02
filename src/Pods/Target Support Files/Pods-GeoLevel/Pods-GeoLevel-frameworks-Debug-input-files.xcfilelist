@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-GeoLevel/Pods-GeoLevel-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GEOSwift/GEOSwift.framework
+${BUILT_PRODUCTS_DIR}/GEOSwiftMapKit/GEOSwiftMapKit.framework
+${BUILT_PRODUCTS_DIR}/geos/geos.framework
