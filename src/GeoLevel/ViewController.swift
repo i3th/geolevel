@@ -81,6 +81,7 @@ class ViewController: UIViewController {
     private func clearMap() {
         mapView.removeOverlays(mapView.overlays)
         levelLabel.text = "N/A"
+        title = ""
     }
     
     private func configureMap() {

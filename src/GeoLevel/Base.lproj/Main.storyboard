@@ -45,7 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="U7p-Dv-mQX">
-                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="vd1-fK-fdO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="vd1-fK-fdO">
                             <connections>
                                 <action selector="clearMap:" destination="BYZ-38-t0r" id="PB0-3B-d1i"/>
                             </connections>
