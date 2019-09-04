@@ -15,9 +15,8 @@
 		9D7DA5C2231B98BE00CA5F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5C1231B98BE00CA5F3D /* Assets.xcassets */; };
 		9D7DA5C5231B98BE00CA5F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5C3231B98BE00CA5F3D /* LaunchScreen.storyboard */; };
 		9D7DA5D0231B98BE00CA5F3D /* GeoLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA5CF231B98BE00CA5F3D /* GeoLevelTests.swift */; };
-		9D7DA5DB231BB01300CA5F3D /* 1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DA231BB01300CA5F3D /* 1.geojson */; };
+		9D7DA5DB231BB01300CA5F3D /* example.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DA231BB01300CA5F3D /* example.geojson */; };
 		9D7DA5DD231DA99600CA5F3D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DC231DA99600CA5F3D /* SettingsViewController.swift */; };
-		9D7DA5E0231DB37F00CA5F3D /* 2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5DF231DB37F00CA5F3D /* 2.geojson */; };
 		9D7DA5E3231F8DA500CA5F3D /* geojson-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA5E2231F8DA500CA5F3D /* geojson-logo.png */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +44,9 @@
 		9D7DA5CB231B98BE00CA5F3D /* GeoLevelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLevelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7DA5CF231B98BE00CA5F3D /* GeoLevelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLevelTests.swift; sourceTree = "<group>"; };
 		9D7DA5D1231B98BE00CA5F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D7DA5DA231BB01300CA5F3D /* 1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.geojson; sourceTree = "<group>"; };
+		9D7DA5DA231BB01300CA5F3D /* example.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.geojson; sourceTree = "<group>"; };
 		9D7DA5DC231DA99600CA5F3D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		9D7DA5DF231DB37F00CA5F3D /* 2.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.geojson; sourceTree = "<group>"; };
-		9D7DA5E1231DD0F200CA5F3D /* 1.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = 1.gpx; path = /Users/aliaksei_smuhaliou/personal/geolevel/src/Data/1.gpx; sourceTree = "<absolute>"; };
+		9D7DA5E1231DD0F200CA5F3D /* example.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = example.gpx; path = /Users/aliaksei_smuhaliou/personal/geolevel/src/Data/example.gpx; sourceTree = "<absolute>"; };
 		9D7DA5E2231F8DA500CA5F3D /* geojson-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geojson-logo.png"; sourceTree = "<group>"; };
 		B6486D17E70579C73F413296 /* Pods-GeoLevelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLevelTests.release.xcconfig"; path = "Target Support Files/Pods-GeoLevelTests/Pods-GeoLevelTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8AD21FC9BB5104459DDC146 /* Pods-GeoLevel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLevel.debug.xcconfig"; path = "Target Support Files/Pods-GeoLevel/Pods-GeoLevel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,9 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				9D7DA5E2231F8DA500CA5F3D /* geojson-logo.png */,
-				9D7DA5E1231DD0F200CA5F3D /* 1.gpx */,
-				9D7DA5DA231BB01300CA5F3D /* 1.geojson */,
-				9D7DA5DF231DB37F00CA5F3D /* 2.geojson */,
+				9D7DA5E1231DD0F200CA5F3D /* example.gpx */,
+				9D7DA5DA231BB01300CA5F3D /* example.geojson */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -237,9 +234,8 @@
 				9D7DA5C5231B98BE00CA5F3D /* LaunchScreen.storyboard in Resources */,
 				9D7DA5C2231B98BE00CA5F3D /* Assets.xcassets in Resources */,
 				9D7DA5E3231F8DA500CA5F3D /* geojson-logo.png in Resources */,
-				9D7DA5DB231BB01300CA5F3D /* 1.geojson in Resources */,
+				9D7DA5DB231BB01300CA5F3D /* example.geojson in Resources */,
 				9D7DA5C0231B98BC00CA5F3D /* Main.storyboard in Resources */,
-				9D7DA5E0231DB37F00CA5F3D /* 2.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

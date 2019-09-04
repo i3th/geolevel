@@ -36,6 +36,14 @@ class ViewController: UIViewController {
         
         requestLocationUpdates()
         configureMap()
+        
+        NotificationCenter.default.addObserver(forName: .AppDidReceiveGeoJSONFile, object: nil, queue: nil) { [weak self] (notification) in
+            guard let self = self, let url = notification.userInfo?["url"] as? URL else { return }
+        
+            let features = GeoJSONDecoder.readFeatures(at: url)
+            self.clearMap()
+            self.addFeatures(features)
+        }
     }
     
     private func requestLocationUpdates() {
@@ -168,7 +176,8 @@ extension ViewController: CLLocationManagerDelegate {
 
 extension ViewController: SettingsViewControllerDelegate {
     
-    func settings(_ vc: SettingsViewController, didSelectFeatures features: [Feature]) {
+    func settings(_ vc: SettingsViewController, didSelectFeatures features: [Feature], title: String) {
+        self.title = title
         clearMap()
         addFeatures(features)
         if let coordinate = lastUserCoordinate {
