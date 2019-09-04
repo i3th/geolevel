@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         
             let features = GeoJSONDecoder.readFeatures(at: url)
             self.clearMap()
+            self.title = url.fileName
             self.addFeatures(features)
         }
     }
@@ -81,7 +82,7 @@ class ViewController: UIViewController {
     private func clearMap() {
         mapView.removeOverlays(mapView.overlays)
         levelLabel.text = "N/A"
-        title = ""
+        title = nil
     }
     
     private func configureMap() {
@@ -178,8 +179,8 @@ extension ViewController: CLLocationManagerDelegate {
 extension ViewController: SettingsViewControllerDelegate {
     
     func settings(_ vc: SettingsViewController, didSelectFeatures features: [Feature], title: String) {
-        self.title = title
         clearMap()
+        self.title = title
         addFeatures(features)
         if let coordinate = lastUserCoordinate {
             showLevel(at: coordinate)

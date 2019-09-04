@@ -23,6 +23,13 @@ class GeoJSONDecoder {
     }
 }
 
+
+extension URL {
+    var fileName: String {
+        return lastPathComponent.split(separator: ".").dropLast().joined(separator: ".")
+    }
+}
+
 protocol SettingsViewControllerDelegate: AnyObject {
     func settings(_ vc: SettingsViewController, didSelectFeatures features: [Feature], title: String)
 }
@@ -92,7 +99,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-        cell.textLabel?.text = files[indexPath.section][indexPath.row].lastPathComponent
+        cell.textLabel?.text = files[indexPath.section][indexPath.row].fileName
 
         return cell
     }
@@ -102,8 +109,8 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         let url = files[indexPath.section][indexPath.row]
         let features = readFeatures(at: url)
         if !features.isEmpty {
-            let name = url.lastPathComponent.split(separator: ".").first ?? ""
-            delegate?.settings(self, didSelectFeatures: features, title: String(name))
+            
+            delegate?.settings(self, didSelectFeatures: features, title: url.fileName)
         } else {
             let alert = UIAlertController(title: "Error", message: "Failed to read features at \(url.lastPathComponent). Or the file is empty", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
