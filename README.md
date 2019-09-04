@@ -11,4 +11,4 @@
 
 ### To delete file:
 1. Open Settings
-1. Swipe left on copied to the app files
+1. Swipe left on copied file
